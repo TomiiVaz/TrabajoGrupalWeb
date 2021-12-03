@@ -1,0 +1,624 @@
+/* Estilos Header y Footer */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+Blanco: f4fff8
+Negro: 2A2D34
+Naranjado: D1603D
+Verde: 1D7874
+Celeste: 60AFFF 
+*/
+main {
+    width: 80%;
+    margin: auto;
+    /* font-size: 25px; */
+}
+
+body{
+    margin: auto;
+    font-family: 'Roboto';
+    background-color: #f4fff8;
+    color: #000;
+    position: relative;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+/* Header */
+header{
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+}
+.header-redes a{
+    color: #0a486b;
+}
+.header-redes a:hover{
+    opacity: .8;
+}
+header a{
+    color: #f4fff8;
+    font-size: 25px;
+    padding: 1em;
+}
+header nav a{
+    font-size: 1.2rem;
+}
+header nav a:hover{
+    background-color: #f4fff8;
+    color: #0a486b;
+}
+
+header div{
+    padding:10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul{
+    display: flex;
+}
+
+header li{
+    margin:0px 10px;
+    text-transform: uppercase;
+}
+
+header nav{
+    padding: 30px 0;
+    background-color: #0a486b;
+    padding: 15px;
+}
+
+header nav ul{
+    width: 75%;
+    margin: auto;
+    justify-content: center;
+}
+
+header nav li{
+    margin: 0px 25px;
+    font-size: 1.3em;
+}
+/* /Header */
+
+/* HOME */
+/* PARTE PABLO */
+h1{
+    text-align: center;
+    margin-bottom: 1rem;
+
+}
+.contenedor-max{
+    text-align: center;
+}
+
+.contenedor-menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(../img/menus/utiles-escolares-pizarra.jpeg);
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.contenedor-menu article{
+    opacity: 0.9;
+    padding: 10px;
+}
+
+.imagen-inscribirse{
+    border-radius: 5px;
+}
+
+.imagen-inscribirse img{
+    border-radius: 10px;
+}
+
+.curso{
+    text-align: center;
+    color: white;
+    margin-bottom: 5px;
+    background-color: tomato;
+    border-radius: 5px;
+}
+
+/* PARTE PABLO */
+
+/* PARTE ROCIO */
+.seccion-testimonio{
+    margin: 2rem 0;
+}
+.seccion-testimonio h2{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.contenedor-testimonios{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-testimonios a{
+    position: absolute;
+    top: 50%;
+    transition: all .3
+    s;
+}
+.contenedor-testimonios a:hover,.contenedor-testimonios a:active{
+    opacity: .8;
+    color: #1C0B88;
+    transform: scale(1.5);
+}
+.item-testimonio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    text-align: center;
+}
+.item-testimonio span{
+    display: block;
+}
+.carousel-control-prev, .carousel-control-next{
+    color: #1C0B88!important;
+}
+
+@media screen and (max-width:768px){
+    .flecha-prev{ left: 0;}
+    .flecha-next{right: 0;}
+}
+.item-testimonio img{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    object-fit: cover;
+    border-radius: 50%;
+
+    margin-bottom: 1rem;
+}
+.item-testimonio-img_color_1{
+    border: 8px solid #ef3f3e;
+}
+.item-testimonio-img_color_2{
+    border: 8px solid orange;
+}
+.item-testimonio-img_color_3{
+    border: 8px solid #99ca3c;
+}
+.item-testimonio  h4{
+    font-size: 1.3rem;
+}
+.item-testimonio  p{
+    margin-top: 1rem;
+}
+/* /PARTE ROCIO */
+
+/* PARTE VIR */ 
+
+main {
+    width: 90%;
+    margin: auto;
+    margin-top: 13rem;
+}
+
+.centrar{
+    margin-top: 130px; /*Agregado el 3/10, chequear con los chicos si quieren replicarlo como para dividir las secciones*/
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contenedor-padre{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items:center; 
+}
+
+.contenedor-hijo{
+    width: calc(25% - 5px);
+    box-sizing: border-box;
+}
+
+.foto{
+    margin-top: 30px;
+    height: 250px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.estamos-inscribiendo{
+    background-color: #0a486b;
+    letter-spacing: 0.5px;
+    padding: 5px;
+    font-size: 18px;
+    color: orange;
+    border: 1px dotted black;
+    position: absolute;
+    z-index: 1;
+    top: 30px;
+    right: 5px;
+}
+
+.foto img{
+    width:100%;
+    height: 250px;
+    border-radius: 10px;
+    transition: 0.5s;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.8;
+}
+
+.foto img:hover{
+    transform: scale(1.2);
+    border-radius: 10px;
+}
+.sede {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.sede i{
+    font-size:20px;
+    margin-right:8px;
+    color: #99ca3c;
+}
+
+.direccion{
+    border-bottom: 1px solid #eee;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+}
+
+.horarios{
+    border-bottom: 1px solid #eee;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+}
+
+.ubicacion{
+    margin-top: 10px;
+    height: 250px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.ubicacion iframe{
+    width: 100%;
+    height: 245px;
+    border-radius: 10px;
+    border: 0;
+}
+
+/* /PARTE VIR */ 
+
+/* PARTE TOMAS */
+.tomas-title{
+    /* background-color: #fff; */
+    margin: 2em 0em 1em 0em;
+    padding: .5em;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.tomas-title p{
+    opacity: 0.5;
+}
+
+.tomas-form{
+    /* background-color: #fff; */
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.tomas-form article{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.tomas-form input{
+    border: 1px grey solid;
+    border-radius: 10px;
+    padding: 4px;
+    margin-top: .3em;
+    font-size: 1.2em;
+}
+
+.tomas-form button{
+    border:3px solid orange ;
+    font-size: 1.4em;
+    padding: 5px;
+    background-color: orange;
+    color: #fff;
+    border-radius: 15px;
+    transition: all .5s;
+}
+
+.tomas-form button:hover{
+    transform: scale(1.2);
+}
+
+.selectores a{
+    margin-top: 1em;
+    background-color: orange;
+    width: 30%;
+    text-align: center;
+    border-radius: 1rem;
+    padding: .5rem;
+}
+
+.selectores label{
+    margin-bottom: 1em;
+}
+
+.selectores select{
+    margin-bottom: 1em;
+}
+
+.columna_izquierda, .columna_derecha{
+    width: calc(50% - 30px);
+    box-sizing: border-box;
+    padding: 1em 2em;
+    border-radius: 1rem;
+    border:solid 2px black;
+
+} 
+
+.columna_izquierda p{
+    margin-bottom: 1em;
+}
+
+.columna_derecha a{
+    color: white;
+}
+/* /PARTE TOMAS */
+
+/* Footer */
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #2A2D34;
+    color: #f4fff8;
+    margin-top: 25px;
+    padding: 30px;
+}
+footer a{
+    color: #f4fff8;
+}
+
+footer a i{
+    font-size: 20px;
+}
+
+footer h4{
+    margin-bottom: 15px; 
+}
+
+footer li{
+    margin: 5px 0;
+}
+
+.redes ul{
+    display: flex;
+}
+
+.redes li{
+    margin-right: 25px;
+}
+footer li:hover{
+    opacity: .8;
+
+}
+.logo-footer{
+    display: none;
+}
+/* /Footer */
+
+/* Bnt mebu mobile */
+.contenedor_btn_mobile{
+    display: none;
+}
+
+/* Responsive */
+
+/* Celular */
+@media screen and (max-width:48em) {
+     .contenedor-menu, .contenedor-testimonios, .contenedor-padre, .tomas-form{
+        flex-direction: column;
+        }
+    
+    .contenedor-testimonios{
+        align-items: center;
+    }
+    .item-testimonio{
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    .contenedor-hijo, .columna_izquierda, .columna_derecha{
+        width: 100%;
+    }
+
+    .foto{
+        margin: 10px 0px 10px 0px;
+    }
+
+    .sede {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 2em;
+    }
+    .sede h3{
+        text-align: center;
+    }
+
+    .ubicacion{
+        display: none;
+    }
+
+    .tomas-form{
+        padding: 0;
+    }
+
+    .columna_izquierda{
+        margin-bottom: 2em;
+    }
+
+    #precio{
+        margin-bottom: 1em;
+    }
+
+    .datos, .menu-inferior{
+        display: none;
+    }
+    .redes{
+        margin: auto;
+        text-align: center;
+    }
+    .logo-footer{
+        display: block;
+        width: 65%;
+        background: #fff;
+        padding: .5rem;
+        border-radius: 10px;
+        margin: auto;
+    }
+    footer h4{
+        margin-top: .8rem;
+    }
+    .redes ul {
+        justify-content: space-around;
+    }
+    .redes li {
+        margin-right: 0;
+    }
+
+    /* header */
+    header a{
+        font-size: 20px;
+        padding: .5em;
+    }
+    header img{
+        width: 7.75em;
+    }
+    header nav{
+        display: none;
+        height: 90vh;
+        width: 100vw;
+    }
+    header nav ul{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    header nav li{
+        margin-bottom: 1.5rem;
+    }
+    main{
+        position: relative;
+    }
+    .contenedor_btn_mobile{
+        display: block;
+    }
+    .contenedor_btn_mobile button{
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: .4em;
+        font-size: 1.5rem;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 2;
+        background-color: orange;
+    }
+    #btn_menu_close{
+        position: fixed;
+        top: 110px;
+        left: 20px;
+        background: transparent;
+        color: orange;
+        outline: none;
+        border: none;
+        font-size: 2rem;
+    }
+}
+
+
+/* Tablet chica */
+@media screen and (min-width: 48em) and (max-width: 60em) { 
+    .contenedor-padre{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .contenedor-hijo{
+        width: calc(45% - 10px);
+    }
+    .sede{
+        width: 91%;
+    }
+}
+/* Tablet grande */
+@media screen and (min-width: 60em) and (max-width: 64em) { 
+    header nav{
+        display: block;
+    }
+    .contenedor-padre{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .contenedor-hijo{
+        width: calc(43% - 10px);
+    }
+    .sede{
+        width: 91%;
+    }
+    .ubicacion{
+        margin-bottom: 3.3rem;
+    }
+    #precio, #hor_mod{
+        width: 54%;
+    }
+    .columna_derecha{
+        padding: 1em 1em;
+    }
+}
+
+
+/* Desktop */
+@media screen and (min-width: 64em) and (max-width: 80em) { 
+    header nav{
+        display: block;
+    }
+}

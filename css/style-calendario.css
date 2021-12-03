@@ -1,0 +1,145 @@
+h1{
+    text-align: center;
+    margin: auto;
+    color: black;
+}
+
+.form{
+    text-align: right;
+    margin-top: 10px;
+    font-size: small;
+}
+
+.titulo{
+    display: inline;
+    text-align: center;
+    justify-content: center;
+    font-weight: bolder;
+    background-color: white;
+}
+/*h2{
+    text-align: left;
+    font-weight: normal;
+    border: #2f4579;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: white;
+    display: inline;
+}*/
+
+.contenedor-curso {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem 0;
+    opacity: 0.9;
+}
+
+div h3{
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+div h5{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+
+.informacion{
+    padding: 1rem;
+    border-radius: 15px;
+    background-color: #0a486b;
+    display: flex;
+    color: #f4fff8;
+    align-items: center;
+    width: 30em;
+    box-shadow: 8px 10px 25px 8px rgba(0,0,0,0.55);
+}
+
+article{
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.informacion div{
+    margin-right: 15px;
+}
+
+.bandera{
+    display: block;
+    margin: 15px 10px 10px 10px ;
+    border-radius: 20px;
+}
+
+.bandera img{
+    border-radius: 5px;
+    width: 125px;
+}
+
+.datos {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+.datos li{
+    margin-bottom: .2rem;
+}
+
+.titulos-datos p{
+    padding-left: 3px;
+}
+
+.titulos-datos li{
+    display: flex;
+    justify-content:start;
+    flex-wrap: nowrap;
+}
+
+.informacion-filtrada{
+    margin: 1rem 0;
+    align-items: center;
+}
+.informacion-filtrada h3{
+    text-transform: uppercase;
+}
+.filtro-sin-resultados{
+    text-align: center;
+    color: gray;
+    font-size: 1.1rem;
+    margin: 10rem 0;
+}
+
+.contenedor-inscripcion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align:middle;
+    margin-top: 1em;
+}
+
+.contenedor-inscripcion a{
+    margin-left: 1em;
+    background-color: #F2CA63;
+    border-radius: 0.7em;
+    padding: 10px;
+    color: #2346A6;
+    font-size: 14px;
+}
+
+.informacion-curso h4{
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: orange;
+}

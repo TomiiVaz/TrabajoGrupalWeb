@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-establecimiento.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/filtrar_establecimiento.js"></script>
+    <title>Home | Instituto de inglés</title>
+</head>
+
+<body>
+    <header>
+        <!-- Primer contenedor  -->
+        <div>
+            <!-- Consultar parte gris -->
+            <img src="img/logo.png" alt="Logo">
+            <!-- Redes -->
+            <ul class="header-redes">
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i> </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- /Primer contenedor  -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="nosotros.html">Nosotros</a>
+                </li>
+                <li>
+                    <a href="establecimientos.html">Establecimientos</a>
+                </li>
+                <!-- <li>
+                    <a href="inscripcion.html">Inscripcion</a>
+                </li> -->
+                <li>
+                    <a href="calendario.html">Calendario</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Filtrado  -->
+            <select name="establecimineto" id="select-establecimiento">
+                <option value="Barracas">Barracas</option>
+                <option value="Caballito">Caballito</option>
+                <option value="Lomas de Zamora">Lomas de Zamora</option>
+                <option value="Retiro">Retiro</option>
+            </select>
+            <button id="filtrar">Filtrar</button>
+        <!-- /Filtrado  -->
+
+        <div class="contenedor-main">
+            <!-- Establecimientos -->
+            <section class="establecimiento">
+                <article class="img-cont">
+                    <img src="img/img_sedes/establecimiento-barracas.jpeg" alt="establecimiento-uno">
+                </article>
+                <article class="number-text">
+                    <h3>Barracas</h3>
+                    <h4>Direccion:</h4>
+                    <p>Brandsen 1604/6, CABA</p>
+                    <h4>Provincia:</h4>
+                    <p>Buenos Aires</p>
+                    <div>
+                        <a href="establecimientos-detalles-one.html">Ver detalles</a>
+                    </div>
+                </article>
+            </section>
+
+            <section class="establecimiento">
+                <article class="img-cont">
+                    <img src="img/img_sedes/establecimiento-caballito.jpeg" alt="establecimiento-dos">
+                </article>
+                <article class="number-text">
+                    <h3>Caballito</h3>
+                    <h4>Direccion:</h4>
+                    <p>Av. Rivadavia 4601, CABA</p>
+                    <h4>Provincia:</h4>
+                    <p>Buenos Aires</p>
+                    <div>
+                        <a href="establecimientos-detalles-two.html">Ver detalles</a>
+                    </div>
+                </article>
+            </section>
+
+            <section class="establecimiento">
+                <article class="img-cont">
+                    <img src="img/img_sedes/establecimiento-lomas-de-zamora.jpeg" alt="establecimiento-tres">
+                </article>
+                <article class="number-text">
+                    <h3>Lomas de Zamora</h3>
+                    <h4>Direccion:</h4>
+                    <p>Av. meeks 444, Lomas de Zamora</p>
+                    <h4>Provincia:</h4>
+                    <p>Buenos Aires</p>
+                    <div>
+                        <a href="establecimientos-detalles-three.html">Ver detalles</a>
+                    </div>
+                </article>
+            </section>
+
+            <section class="establecimiento">
+                <article class="img-cont">
+                    <img src="img/img_sedes/establecimiento-retiro.jpeg" alt="establecimiento-cuatro">
+                </article>
+                <article class="number-text">
+                    <h3>Retiro</h3>
+                    <h4>Direccion:</h4>
+                    <p>Suipacha 1333, CABA</p>
+                    <h4>Provincia:<h4>
+                            <p>Buenos Aires</p>
+                            <div>
+                                <a href="establecimientos-detalles-four.html">Ver detalles</a>
+                            </div>
+                </article>
+            </section>
+            <!-- /Establecimientos -->
+        </div>
+
+        <!-- Establecimiento filtrado -->
+        <section id="establecimiento-filtrado">
+
+        </section>
+        <!-- /Establecimiento filtrado -->
+
+    </main>
+
+    <footer>
+        <!-- Datos del grupo -->
+        <div class="datos">
+            <!-- Provisorio -->
+            <h4>Datos del Grupo</h4>
+            <ul>
+                <li>
+                    Antúnez, Pablo - D.N.I: 37.792.173
+                </li>
+                <li>
+                    Mónaco, Rocío - D.N.I: 42.321.110
+                </li>
+                <li>
+                    Prats, Virginia - D.N.I: 32.274.225
+                </li>
+                <li>
+                    Vázquez, Tomás - D.N.I: 43.735.806
+                </li>
+            </ul>
+        </div>
+        <!-- /Datos del grupo -->
+
+        <!-- Menu inferior -->
+        <nav>
+            <!-- Provisorio -->
+            <h4>Menu Inferior</h4>
+            <ul>
+                <li>
+                    <a href="establecimientos.html">Establecimientos</a>
+                </li>
+                <li>
+                    <a href="inscripcion.html">Inscripcion</a>
+                </li>
+                <li>
+                    <a href="calendario.html">Calendario</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /Menu inferior -->
+
+        <!-- Redes sociales -->
+        <div class="redes">
+            <!-- Provisorio -->
+            <h4>Redes Sociales</h4>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i> </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- /Redes sociales -->
+    </footer>
+</body>
+
+</html>

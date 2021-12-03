@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Home | Instituto de idiomas</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="js/validacion-home.js"></script>
+    <script src="js/localstorage_inscripcion.js"></script>
+    <script src="js/menu_mobile.js"></script>
+</head>
+
+<body>
+    <header>
+        <!-- Primer contenedor  -->
+        <div>
+            <!-- Consultar parte gris -->
+            <img src="img/logo.png" alt="Logo institucion">
+            <!-- Redes -->
+            <ul class="header-redes">
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i> </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- /Primer contenedor  -->
+        <nav id="nav_header">
+            <button id="btn_menu_close"><i class="far fa-times-circle"></i></button>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="nosotros.html">Nosotros</a>
+                </li>
+                <li>
+                    <a href="establecimientos.html">Establecimientos</a>
+                </li>
+                <!-- <li>
+                    <a href="inscripcion.html">Inscripcion</a>
+                </li> -->
+                <li>
+                    <a href="calendario.html">Calendario</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>¡BIENVENIDO! </h1>
+
+        <section class="contenedor-max">
+            <article class="contenedor-menu">
+                 <article>
+                     <a href="establecimientos.html">
+                        <div class="imagen-inscribirse">
+                            <img src="img/menus/Instituto.jpeg" alt="Instituto" width="300">
+                        </div>
+                        <div class="curso">
+                            <p>Buscá establecimiento</p>
+                        </div>
+                     </a>
+                </article>
+                <article>
+                    <a href="calendario.html">
+                        <div class="imagen-inscribirse">
+                            <img src="img/menus/calendario.jpg" alt="Calendario" width="270">
+                        </div>
+                        <div class="curso">
+                             <p>Seleccioná el curso</p>
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <a href="inscripcion.html">
+                        <div class="imagen-inscribirse">  
+                            <img src="img/menus/Libro.jpg" alt="Libro" width="300">
+                        </div>
+                        <div class="curso">
+                            <p>Inscribite!</p>
+                        </div> 
+                    </a>
+                </article>
+            </article>
+        </section>
+
+        <!-- Slider -->
+        <section class="seccion-testimonio">
+            <h2>Testimonios</h2>
+            <!-- Contenedor testimonios -->
+            <article class="contenedor-testimonios carousel slide" id="testimonios"  data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#testimonios" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#testimonios" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#testimonios" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <!-- <a href="#" class="flecha-prev"><i class="fas fa-chevron-left"></i></a> -->
+                <div class="carousel-inner">
+                    <!-- Testimonio #1 -->
+                    <div class="item-testimonio carousel-item active" data-bs-interval="5000">
+                        <img  class="item-testimonio-img_color_1" src="img/testimonios/testimonio-1.jpg" alt="Testimonio Laura Vidal">
+                        <h4>Laura Vidal</h4>
+                        <p>¡Mi experiencia en Join Us fue la mejor! <span>Aprendí y me divertí mucho.</span></p>
+                    </div>
+                    <!--/ Testimonio #1 -->
+                    <!-- Testimonio #2 -->
+                    <div class="item-testimonio carousel-item" data-bs-interval="5000">
+                        <img class="item-testimonio-img_color_2" src="img/testimonios/testimonio-2.jpg" alt="Testimonio Laura Vidal">
+                        <h4>Marcela Lopez</h4>
+                        <p>Gracias a Join Us pude desenvolverme <span> en entrevistas para conseguir mi primer empleo en el exterior.</span></p>
+                    </div>
+                    <!--/ Testimonio #2 -->
+                    <!-- Testimonio #3 -->
+                    <div class="item-testimonio carousel-item" data-bs-interval="5000">
+                        <img class="item-testimonio-img_color_3" src="img/testimonios/testimonio-3.jpg" alt="Testimonio Laura Vidal">
+                        <h4>Lucas Montevideo</h4>
+                        <p>Lograron la combinación entre la diversión <span> y el aprendizaje.</span></p>
+                    </div>
+                    <!--/ Testimonio #3 -->
+                </div>
+                <!-- Testimonio #4 -->
+                <!-- <div>
+                    <img src="" alt="">
+                </div> -->
+                <!--/ Testimonio #4 -->
+                <!-- <a href="#" class="flecha-next"><i class="fas fa-chevron-right"></i></a> -->
+                <button class="carousel-control-prev flecha-prev" type="button" data-bs-target="#testimonios" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next flecha-next" type="button" data-bs-target="#testimonios" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+            </article>
+            <!-- / Contenedor testimonios -->
+        </section>
+        <!--/ Slider -->
+
+       <!-- Establecimientos -->
+       <h2 class="centrar">Establecimientos</h2>
+       <section class="contenedor-padre">
+           <article class="contenedor-hijo">
+               <div class="foto"><img src="img/img_sedes/establecimiento-retiro.jpeg" alt="">
+               <p class="estamos-inscribiendo">Estamos inscribiendo!!!</p>
+               </div>
+               
+               <div class="sede">
+                 <h3>Retiro</h3>
+                 <p class="direccion"><i class="fas fa-map-marker-alt"></i>Suipacha 1333, CABA</p>
+                 <p class="horarios"><i class="far fa-clock"></i>Lunes a viernes de 8 a 18 hs.<br>Sábados de 9 a 12 hs.<br><i class="fab fa-whatsapp"></i>WhatsApp: 11 4490 9526</p>
+                 <p class="mail"><i class="fa fa-envelope"></i><a href="mailto:sedecentral@joinus.edu.ar">sedecentral@joinus.edu.ar</a></p>
+               </div>
+               <div class="ubicacion"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.4748870781364!2d-58.38195104877468!3d-34.59215128036644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccab6d30b1117%3A0x3192301bbd1c189e!2sSuipacha%201333%2C%20C1011ACC%20CABA!5e0!3m2!1sen!2sar!4v1633304657580!5m2!1sen!2sar" allowfullscreen="" loading="lazy"></iframe></div>
+           </article>
+
+           <article class="contenedor-hijo">
+               <div class="foto"><img src="img/img_sedes/establecimiento-barracas.jpeg" alt="">
+                   <p class="estamos-inscribiendo">Estamos inscribiendo!!!</p>
+               </div>
+               <div class="sede">
+                   <h3>Barracas</h3>
+                   <p class="direccion"><i class="fas fa-map-marker-alt"></i>Brandsen 1604/6, CABA</p>
+                   <p class="horarios"><i class="far fa-clock"></i>Lunes a viernes de 8 a 18 hs.<br>Sábados de 9 a 12 hs.<br><i class="fab fa-whatsapp"></i>WhatsApp: 11 4045 5556</p>
+                   <p class="mail"><i class="fa fa-envelope"></i><a href="mailto:barracas@joinus.edu.ar">barracas@joinus.edu.ar</a></p>
+                 </div>
+               <div class="ubicacion"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.666987076199!2d-58.375895348384304!3d-34.63785486671782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb4b1b62e779%3A0x458dc0c60230df22!2sBrandsen%201604%2C%20C1287AAJ%20CABA!5e0!3m2!1sen!2sar!4v1633304808039!5m2!1sen!2sar" allowfullscreen="" loading="lazy"></iframe></div>
+           </article>
+
+           <article class="contenedor-hijo">
+               <div class="foto"><img src="img/img_sedes/establecimiento-caballito.jpeg" alt="">
+                   <p class="estamos-inscribiendo">Estamos inscribiendo!!!</p>
+               </div>
+               <div class="sede">
+                   <h3>Caballito</h3>
+                   <p class="direccion"><i class="fas fa-map-marker-alt"></i>Av. Rivadavia 4601, CABA</p>
+                   <p class="horarios"><i class="far fa-clock"></i>Lunes a viernes de 8 a 18 hs.<br>Sábados de 9 a 12 hs.<br><i class="fab fa-whatsapp"></i>WhatsApp: 11 4041 7720</p>
+                   <p class="mail"><i class="fa fa-envelope"></i><a href="mailto:caballito@joinus.edu.ar">caballito@joinus.edu.ar</a></p>
+                 </div>
+               <div class="ubicacion"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.558515921864!2d-58.43237834863788!3d-34.61532368036053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca4341da33fb%3A0x57790a84da1240e9!2sAv.%20Rivadavia%204601%2C%20C1424%20CABA!5e0!3m2!1sen!2sar!4v1633304844923!5m2!1sen!2sar" allowfullscreen="" loading="lazy"></iframe></div>
+           </article>
+
+           <article class="contenedor-hijo">
+               <div class="foto"><img src="img/img_sedes/establecimiento-lomas-de-zamora.jpeg" alt="">
+                   <p class="estamos-inscribiendo">Estamos inscribiendo!!!</p>
+               </div>
+               <div class="sede">
+                   <h3>Lomas de Zamora</h3>
+                   <p class="direccion"><i class="fas fa-map-marker-alt"></i>Av. Meeks 444, Lomas de Zamora</p>
+
+                   <p class="horarios"><i class="far fa-clock"></i>Lunes a viernes de 11 a 18 hs.<br>Sábados de 9 a 12 hs.<br>
+                   <i class="fab fa-whatsapp"></i>WhatsApp: 11 4041 6772</p>
+                   
+                   <p class="mail"><i class="fa fa-envelope"></i><a href="mailto:lomasdezamora@joinus.edu.ar">lomasdezamora@joinus.edu.ar</a></p>
+                 </div>
+               <div class="ubicacion"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3277.5807319181567!2d-58.40033774877035!3d-34.766152973522665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd2ebda14fe43%3A0xccae828acfdfd22d!2sAv.%20Meeks%20444%2C%20Lomas%20de%20Zamora%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1633304935588!5m2!1sen!2sar" allowfullscreen="" loading="lazy"></iframe></div>
+           </article>
+       </section>
+       <!--/ Establecimientos -->
+
+        <!-- Inscribite -->
+        <section class="tomas-box">
+            <article class="tomas-title">
+                <h2>¡Buscá el curso e inscribite!</h2>
+            </article>
+            <article>
+                <form action="#" method="POST" class="tomas-form">
+                    <div class="columna_izquierda">
+                        <p>Establecimiento: <span id="establecimiento_nom"></span></p>
+                        <p>Dirección: <span id="establecimiento_direc"></span></p>
+                        <p>Provincia: <span id="establecimiento_prov"></span></p>
+                        <p>Email: <span id="establecimiento_email"></span></p>
+                    </div>
+                    <div class="columna_derecha">
+                        <div class="selectores">
+                            <label for="establecimiento">Establecimiento</label>
+                            <select name="establecimiento" id="establecimiento">
+                                <option value="Barracas">Barracas</option>
+                                <option value="Caballito">Caballito</option>
+                                <option value="Lomas de zamora">Lomas de zamora</option>
+                                <option value="Retiro">Retiro</option>
+                            </select>
+                        </div>
+                        <div class="selectores">
+                            <label for="Idiomas">Idiomas</label>
+                            <select name="idiomas" id="idiomas">
+
+                            </select>
+                        </div>
+                        <div class="selectores">
+                            <label for="hor_mod">Horarios y modalidad</label>
+                            <select name="hor_mod" id="hor_mod">
+                                
+                            </select>
+                        </div>
+                        <div class="selectores">
+                            <label for="precio">Precio</label>
+                            <input type="text" value="" id="precio" readonly> 
+                            <a href="./inscripcion.html" class="button">Inscribite</a>
+                        </div>
+                    </div>
+
+                </form>
+            </article>
+        </section>
+        <!--/ Inscribite -->
+
+
+        <!-- Btn menu mobile -->
+        <section class="contenedor_btn_mobile">
+            <button id="btn_menu_open"><i class="fas fa-bars"></i></button>
+        </section>
+        <!--/ Btn menu mobile -->
+    </main>
+
+    <footer>
+        <!-- Datos del grupo -->
+        <div class="datos">
+            <!-- Provisorio -->
+            <h4>Datos del Grupo</h4>
+            <ul>
+                <li>
+                    Antúnez, Pablo - D.N.I: 37.792.173
+                </li>
+                <li>
+                    Mónaco, Rocío - D.N.I: 42.321.110
+                </li>
+                <li>
+                    Prats, Virginia - D.N.I: 32.274.225
+                </li>
+                <li>
+                    Vázquez, Tomás - D.N.I: 43.735.806
+                </li>
+            </ul>
+        </div>
+        <!-- /Datos del grupo -->
+
+        <!-- Menu inferior -->
+        <nav class="menu-inferior">
+            <!-- Provisorio -->
+            <h4>Menu Inferior</h4>
+            <ul>
+                <li>
+                    <a href="establecimientos.html">Establecimientos</a>
+                </li>
+                <li>
+                    <a href="inscripcion.html">Inscripcion</a>
+                </li>
+                <li>
+                    <a href="calendario.html">Calendario</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /Menu inferior -->
+
+        <!-- Redes sociales -->
+        <div class="redes">
+            <!-- Provisorio -->
+            <img class="logo-footer" src="img/logo.png" alt="Logo Join Us">
+            <h4>Redes Sociales</h4>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i> </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- /Redes sociales -->
+    </footer>
+</body>
+
+</html>

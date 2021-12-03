@@ -1,0 +1,29 @@
+h1{
+    text-align: center;
+    margin: 1.5em auto;
+    width: 50%;
+    background-color: #0a486b;
+    padding: 0.5em;
+    border-radius: 35px;
+}
+
+h2{
+    text-align: center;
+    margin: 1.5em auto;
+    width: 50%;
+    background-color: orange;
+    padding: 0.5em;
+    border-radius: 35px;
+    color: white;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+article{
+    width: calc(50% - 5em);
+    margin-bottom: 1.5em;
+}

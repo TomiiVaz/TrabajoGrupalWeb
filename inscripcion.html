@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-inscripcion.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Inscripción | Instituto de inglés</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/localstorage_inscripcion.js"></script>
+    <script src="./js/validacion-inscripcion.js"></script>
+</head>
+
+<body>
+    <header>
+        <!-- Primer contenedor  -->
+        <div>
+            <!-- Consultar parte gris -->
+            <img src="img/logo.png" alt="Logo institucion">
+            <!-- Redes -->
+            <ul class="header-redes">
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i> </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- /Primer contenedor  -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="nosotros.html">Nosotros</a>
+                </li>
+                <li>
+                    <a href="establecimientos.html">Establecimientos</a>
+                </li>
+                <!-- <li>
+                    <a href="inscripcion.html">Inscripcion</a>
+                </li> -->
+                <li>
+                    <a href="calendario.html">Calendario</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main_inscripcion">
+        <section>
+            <!-- Contenedor texto -->
+            <article class="contenedor-texto">
+                <h1>INSCRIPCIÓN</h1>
+                <p id="primer_parrafo"></p>
+                <p id="segundo_parrafo"></p>
+                <p id="tercer_parrafo"></p>
+            </article>
+            <!--/ Contenedor texto -->
+            <!-- Contenedor form -->
+            <article>
+                <form action="#" method="GET" id="form">
+                    <!-- Fila #1 -->
+                    <div class="grupo-form">
+                        <div class="campo-form">
+                            <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+                        </div>
+                        <div class="campo-form">
+                            <input type="text" id="apellido" name="apellido" placeholder="Apellido">
+                        </div>
+                    </div>
+                    <!--/ Fila #1 -->
+                    <!-- Fila #2 -->
+                    <div class="grupo-form">
+                        <div class="campo-form">
+                            <input type="number" id="telefono" name="telefono" placeholder="Telefono">
+                        </div>
+                        <div class="campo-form">
+                            <input type="email" id="email" name="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div id="mensaje_error_email">
+
+                    </div>
+                    <!--/ Fila #2 -->
+                    <!-- Fila #3 -->
+                    <div class="grupo-form">
+                        <div class="campo-form">
+                            <input type="text" id="ciudad" name="ciudad" placeholder="Ciudad">
+                        </div>
+                        <div class="campo-form">
+                            <input type="text" id="provincia" name="provincia" placeholder="Provincia">
+                        </div>
+                    </div>
+                    <!--/ Fila #3 -->
+                    <div class="contenedor-btn">
+                        <div id="mensaje_error">
+
+                        </div>
+
+                        <button type="submit" id="btn_inscripcion">INSCRIBIRSE</button>
+                    </div>
+                </form>
+            </article>
+            <!--/ Contenedor form -->
+
+            <!-- PopUp -->
+            <article class="popup">
+                <div class="contenedor_cruz">
+                    <a id="cerrar"><i class="far fa-times-circle"></i></a>
+                </div>
+                <h2>¡Envío exitoso!</h2>
+            </article>
+            <!-- /PopUp -->
+
+        </section>
+    </main>
+
+    <footer>
+        <!-- Datos del grupo -->
+        <div class="datos">
+            <!-- Provisorio -->
+            <h4>Datos del Grupo</h4>
+            <ul>
+                <li>
+                    Antúnez, Pablo - D.N.I: 37.792.173
+                </li>
+                <li>
+                    Mónaco, Rocío - D.N.I: 42.321.110
+                </li>
+                <li>
+                    Prats, Virginia - D.N.I: 32.274.225
+                </li>
+                <li>
+                    Vázquez, Tomás - D.N.I: 43.735.806
+                </li>
+            </ul>
+        </div>
+        <!-- /Datos del grupo -->
+
+        <!-- Menu inferior -->
+        <nav>
+            <!-- Provisorio -->
+            <h4>Menu Inferior</h4>
+            <ul>
+                <li>
+                    <a href="establecimientos.html">Establecimientos</a>
+                </li>
+                <li>
+                    <a href="inscripcion.html">Inscripcion</a>
+                </li>
+                <li>
+                    <a href="calendario.html">Calendario</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /Menu inferior -->
+
+        <!-- Redes sociales -->
+        <div class="redes">
+            <!-- Provisorio -->
+            <h4>Redes Sociales</h4>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i> </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- /Redes sociales -->
+    </footer>
+</body>
+
+</html>

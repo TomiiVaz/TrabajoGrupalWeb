@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-calendario.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,300&display=swap" rel="stylesheet">
+    <title>Home | Instituto de inglés</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/filtrar_calendario.js"></script>
+</head>
+
+<body>
+    <header>
+        <!-- Primer contenedor  -->
+        <div>
+            <!-- Consultar parte gris -->
+            <img src="img/logo.png" alt="Logo institucion">
+            <!-- Redes -->
+            <ul class="header-redes">
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i> </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- /Primer contenedor  -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="nosotros.html">Nosotros</a>
+                </li>
+                <li>
+                    <a href="establecimientos.html">Establecimientos</a>
+                </li>
+                <!-- <li>
+                    <a href="inscripcion.html">Inscripcion</a>
+                </li> -->
+                <li>
+                    <a href="calendario.html">Calendario</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>
+            CALENDARIO DE CURSOS
+        </h1>
+        <!-- <form action="#" class="form" id="form"> -->
+            <label for="">Filtrar por</label>
+            <select name="localidad" id="localidad">
+                <option value="Barracas">Barracas</option>
+                <option value="Caballito">Caballito</option>
+                <option value="Lomas de Zamora">Lomas de Zamora</option>
+                <option value="Retiro">Retiro</option>
+            </select>
+            <select name="idioma" id="idioma">
+                <option value="Alemán">Alemán</option>
+                <option value="Chino">Chino</option>
+                <option value="Inglés">Inglés</option>
+                <option value="Italiano">Italiano</option>
+            </select>
+            <button id="filtrar">Filtrar</button>
+        <!-- </form> -->
+        <section class="curso-ocultar">
+            <article class="titulo">
+                <h2>MES 1</h2>
+            </article>
+            <article class="contenedor-curso">
+                <article class="informacion">
+                    <div class="bandera">
+                        <img src="img/alemania.jpg" alt="Bandera alemania">
+                    </div>
+                    <div class="informacion-curso">
+                        <h3>ALEMÁN - INICIAL</h3>
+                        <div class="datos">
+                            <ul class="titulos-datos">
+                                <li>
+                                    <h5>Modalidad:</h5>
+                                    <p>Presencial</p>
+                                </li>
+                                <li>
+                                    <h5>Días:</h5>
+                                    <p>Lunes y Viernes</p>
+                                </li>
+                                <li>
+                                    <h5>Horarios:</h5>
+                                    <p> 18:00 hs</p>
+                                </li>
+                                <li>
+                                    <h5>Fecha de inicio:</h5>
+                                    <p> 01/03/21 </p>
+                                </li>
+                                <li>
+                                    <h5>Localidad:</h5>
+                                    <p> Barracas </p>
+                                </li>
+                                <div class="contenedor-inscripcion">
+                                    <li>
+                                        <h4>Precio: $10.000.-</h4>
+                                    </li>
+                                    <a href="inscripcion.html">Inscribite!</a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                <article class="informacion">
+                    <div class="bandera">
+                        <img src="img/britanica.jpg" alt="Bandera británica">
+                    </div>
+                    <div class="informacion-curso">
+                        <h3>INGLÉS - INICIAL</h3>
+                        <div class="datos">
+                            <ul class="titulos-datos">
+                                <li>
+                                    <h5>Modalidad:</h5>
+                                    <p>Presencial y virtual</p>
+                                </li>
+                                <li>
+                                    <h5>Días: </h5>
+                                    <p>Lunes y Viernes</p>
+                                </li>
+                                <li>
+                                    <h5>Horarios:</h5>
+                                    <p> 18:00 hs</p>
+                                </li>
+                                <li>
+                                    <h5>Fecha de inicio:</h5>
+                                    <p> 01/03/21 </p>
+                                </li>
+                                <li>
+                                    <h5>Localidad:</h5>
+                                    <p> Lomas de Zamora </p>
+                                </li>
+                                <div class="contenedor-inscripcion">
+                                    <li>
+                                        <h4>Precio: $10.000.-</h4>
+                                    </li>
+                                    <a href="inscripcion.html">Inscribite!</a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </article>
+        </section>
+        <section class="curso-ocultar">
+            <article class="contenedor-curso">
+                <article class="informacion">
+                    <div class="bandera">
+                        <img src="img/china.jpg" alt="Bandera china">
+                    </div>
+                    <div class="informacion-curso">
+                        <h3>CHINO - INICIAL</h3>
+                        <div class="datos">
+                            <ul class="titulos-datos">
+                                <li>
+                                    <h5>Modalidad:</h5>
+                                    <p>Presencial</p>
+                                </li>
+                                <li>
+                                    <h5>Días: </h5>
+                                    <p>Martes y Jueves</p>
+                                </li>
+                                <li>
+                                    <h5>Horarios:</h5>
+                                    <p> 18:00 hs</p>
+                                </li>
+                                <li>
+                                    <h5>Fecha de inicio:</h5>
+                                    <p> 01/03/21 </p>
+                                </li>
+                                <li>
+                                    <h5>Localidad:</h5>
+                                    <p> Caballito </p>
+                                </li>
+                                <div class="contenedor-inscripcion">
+                                    <li>
+                                        <h4>Precio: $10.000.-</h4>
+                                    </li>
+                                    <a href="inscripcion.html">Inscribite!</a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                <article class="informacion">
+                    <div class="bandera">
+                        <img src="img/italia.jpg" alt="Bandera italia">
+                    </div>
+                    <div class="informacion-curso">
+                        <h3>ITALIANO - INICIAL</h3>
+                        <div class="datos">
+                            <ul class="titulos-datos">
+                                <li>
+                                    <h5>Modalidad:</h5>
+                                    <p>Presencial</p>
+                                </li>
+                                <li>
+                                    <h5>Días: </h5>
+                                    <p>Martes y Jueves</p>
+                                </li>
+                                <li>
+                                    <h5>Horarios:</h5>
+                                    <p> 18:00 hs</p>
+                                </li>
+                                <li>
+                                    <h5>Fecha de inicio:</h5>
+                                    <p> 01/03/21 </p>
+                                </li>
+                                <li>
+                                    <h5>Localidad:</h5>
+                                    <p> Retiro </p>
+                                </li>
+                                <div class="contenedor-inscripcion">
+                                    <li>
+                                        <h4>Precio: $10.000.-</h4>
+                                    </li>
+                                    <a href="inscripcion.html">Inscribite!</a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </article>
+        </section>
+        <!-- NIVEL INTERMEDIO -->
+        <section class="curso-ocultar">
+            <article class="titulo">
+                <h2>MES 2</h2>
+            </article>
+            <article class="contenedor-curso">
+                <article class="informacion">
+                    <div class="bandera">
+                        <img src="img/alemania.jpg" alt="Bandera alemania">
+                    </div>
+                    <div class="informacion-curso">
+                        <h3>ALEMÁN - INTERMEDIO</h3>
+                        <div class="datos">
+                            <ul class="titulos-datos">
+                                <li>
+                                    <h5>Modalidad:</h5>
+                                    <p>Presencial</p>
+                                </li>
+                                <li>
+                                    <h5>Días: </h5>
+                                    <p>Lunes y Viernes</p>
+                                </li>
+                                <li>
+                                    <h5>Horarios:</h5>
+                                    <p> 18:00 hs</p>
+                                </li>
+                                <li>
+                                    <h5>Fecha de inicio:</h5>
+                                    <p> 01/03/21 </p>
+                                </li>
+                                <li>
+                                    <h5>Localidad:</h5>
+                                    <p> Barracas </p>
+                                </li>
+                                <div class="contenedor-inscripcion">
+                                    <li>
+                                        <h4>Precio: $10.000.-</h4>
+                                    </li>
+                                    <a href="inscripcion.html">Inscribite!</a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                <article class="informacion">
+                    <div class="bandera">
+                        <img src="img/britanica.jpg" alt="Bandera británica">
+                    </div>
+                    <div class="informacion-curso">
+                        <h3>INGLÉS - INTERMEDIO</h3>
+                        <div class="datos">
+                            <ul class="titulos-datos">
+                                <li>
+                                    <h5>Modalidad:</h5>
+                                    <p>Presencial y virtual</p>
+                                </li>
+                                <li>
+                                    <h5>Días: </h5>
+                                    <p>Lunes y Viernes</p>
+                                </li>
+                                <li>
+                                    <h5>Horarios:</h5>
+                                    <p> 18:00 hs</p>
+                                </li>
+                                <li>
+                                    <h5>Fecha de inicio:</h5>
+                                    <p> 01/03/21 </p>
+                                </li>
+                                <li>
+                                    <h5>Localidad:</h5>
+                                    <p> Lomas de Zamora </p>
+                                </li>
+                                <div class="contenedor-inscripcion">
+                                    <li>
+                                        <h4>Precio: $10.000.-</h4>
+                                    </li>
+                                    <a href="inscripcion.html">Inscribite!</a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </article>
+        </section>
+        <section class="curso-ocultar">
+            <article class="contenedor-curso">
+                <article class="informacion">
+                    <div class="bandera">
+                        <img src="img/china.jpg" alt="Bandera china">
+                    </div>
+                    <div class="informacion-curso">
+                        <h3>CHINO - INTERMEDIO</h3>
+                        <div class="datos">
+                            <ul class="titulos-datos">
+                                <li>
+                                    <h5>Modalidad:</h5>
+                                    <p>Presencial</p>
+                                </li>
+                                <li>
+                                    <h5>Días: </h5>
+                                    <p>Martes y Jueves</p>
+                                </li>
+                                <li>
+                                    <h5>Horarios:</h5>
+                                    <p> 18:00 hs</p>
+                                </li>
+                                <li>
+                                    <h5>Fecha de inicio:</h5>
+                                    <p> 01/03/21 </p>
+                                </li>
+                                <li>
+                                    <h5>Localidad:</h5>
+                                    <p> Caballito </p>
+                                </li>
+                                <div class="contenedor-inscripcion">
+                                    <li>
+                                        <h4>Precio: $10.000.-</h4>
+                                    </li>
+                                    <a href="inscripcion.html">Inscribite!</a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                <article class="informacion">
+                    <div class="bandera">
+                        <img src="img/italia.jpg" alt="Bandera italia">
+                    </div>
+                    <div class="informacion-curso">
+                        <h3>ITALIANO - INTERMEDIO</h3>
+                        <div class="datos">
+                            <ul class="titulos-datos">
+                                <li>
+                                    <h5>Modalidad:</h5>
+                                    <p>Presencial</p>
+                                </li>
+                                <li>
+                                    <h5>Días: </h5>
+                                    <p>Martes y Jueves</p>
+                                </li>
+                                <li>
+                                    <h5>Horarios:</h5>
+                                    <p> 18:00 hs</p>
+                                </li>
+                                <li>
+                                    <h5>Fecha de inicio:</h5>
+                                    <p> 01/03/21 </p>
+                                </li>
+                                <li>
+                                    <h5>Localidad:</h5>
+                                    <p> Retiro </p>
+                                </li>
+                                <div class="contenedor-inscripcion">
+                                    <li>
+                                        <h4>Precio: $10.000.-</h4>
+                                    </li>
+                                    <a href="inscripcion.html">Inscribite!</a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </article>
+        </section>
+        <!-- NIVEL AVANZADO -->
+        <section class="curso-ocultar">
+            <article class="titulo">
+                <h2>MES 3</h2>
+            </article>
+            <article class="contenedor-curso">
+                <article class="informacion">
+                    <div class="bandera">
+                        <img src="img/alemania.jpg" alt="Bandera alemania">
+                    </div>
+                    <div class="informacion-curso">
+                        <h3>ALEMÁN - AVANZADO</h3>
+                        <div class="datos">
+                            <ul class="titulos-datos">
+                                <li>
+                                    <h5>Modalidad:</h5>
+                                    <p>Presencial</p>
+                                </li>
+                                <li>
+                                    <h5>Días: </h5>
+                                    <p>Lunes y Viernes</p>
+                                </li>
+                                <li>
+                                    <h5>Horarios:</h5>
+                                    <p> 18:00 hs</p>
+                                </li>
+                                <li>
+                                    <h5>Fecha de inicio:</h5>
+                                    <p> 01/03/21 </p>
+                                </li>
+                                <li>
+                                    <h5>Localidad:</h5>
+                                    <p> Barracas </p>
+                                </li>
+                                <div class="contenedor-inscripcion">
+                                    <li>
+                                        <h4>Precio: $10.000.-</h4>
+                                    </li>
+                                    <a href="inscripcion.html">Inscribite!</a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                <article class="informacion">
+                    <div class="bandera">
+                        <img src="img/britanica.jpg" alt="Bandera británica">
+                    </div>
+                    <div class="informacion-curso">
+                        <h3>INGLÉS - AVANZADO</h3>
+                        <div class="datos">
+                            <ul class="titulos-datos">
+                                <li>
+                                    <h5>Modalidad:</h5>
+                                    <p>Presencial y virtual</p>
+                                </li>
+                                <li>
+                                    <h5>Días: </h5>
+                                    <p>Lunes y Viernes</p>
+                                </li>
+                                <li>
+                                    <h5>Horarios:</h5>
+                                    <p> 18:00 hs</p>
+                                </li>
+                                <li>
+                                    <h5>Fecha de inicio:</h5>
+                                    <p> 01/03/21 </p>
+                                </li>
+                                <li>
+                                    <h5>Localidad:</h5>
+                                    <p> Lomas de Zamora </p>
+                                </li>
+                                <div class="contenedor-inscripcion">
+                                    <li>
+                                        <h4>Precio: $10.000.-</h4>
+                                    </li>
+                                    <a href="inscripcion.html">Inscribite!</a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </article>
+        </section>
+        <section class="curso-ocultar">
+            <article class="contenedor-curso">
+                <article class="informacion">
+                    <div class="bandera">
+                        <img src="img/china.jpg" alt="Bandera china">
+                    </div>
+                    <div class="informacion-curso">
+                        <h3>CHINO - AVANZADO</h3>
+                        <div class="datos">
+                            <ul class="titulos-datos">
+                                <li>
+                                    <h5>Modalidad:</h5>
+                                    <p>Presencial</p>
+                                </li>
+                                <li>
+                                    <h5>Días: </h5>
+                                    <p>Martes y Jueves</p>
+                                </li>
+                                <li>
+                                    <h5>Horarios:</h5>
+                                    <p> 18:00 hs</p>
+                                </li>
+                                <li>
+                                    <h5>Fecha de inicio:</h5>
+                                    <p> 01/03/21 </p>
+                                </li>
+                                <li>
+                                    <h5>Localidad:</h5>
+                                    <p> Caballito </p>
+                                </li>
+                                <div class="contenedor-inscripcion">
+                                    <li>
+                                        <h4>Precio: $10.000.-</h4>
+                                    </li>
+                                    <a href="inscripcion.html">Inscribite!</a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                <article class="informacion">
+                    <div class="bandera">
+                        <img src="img/italia.jpg" alt="Bandera italia">
+                    </div>
+                    <div class="informacion-curso">
+                        <h3>ITALIANO - AVANZADO</h3>
+                        <div class="datos">
+                            <ul class="titulos-datos">
+                                <li>
+                                    <h5>Modalidad:</h5>
+                                    <p>Presencial</p>
+                                </li>
+                                <li>
+                                    <h5>Días: </h5>
+                                    <p>Martes y Jueves</p>
+                                </li>
+                                <li>
+                                    <h5>Horarios:</h5>
+                                    <p> 18:00 hs</p>
+                                </li>
+                                <li>
+                                    <h5>Fecha de inicio:</h5>
+                                    <p> 01/03/21 </p>
+                                </li>
+                                <li>
+                                    <h5>Localidad:</h5>
+                                    <p> Retiro </p>
+                                </li>
+                                <div class="contenedor-inscripcion">
+                                    <li>
+                                        <h4>Precio: $10.000.-</h4>
+                                    </li>
+                                    <a href="inscripcion.html">Inscribite!</a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </article>
+        </section>
+
+        <!-- section cursos filtrados -->
+        <section id="cursos_filtrados">
+
+        </section>
+        <!--/ section cursos filtrados -->
+    </main>
+
+    <footer>
+        <!-- Datos del grupo -->
+        <div class="datos">
+            <!-- Provisorio -->
+            <h4>Datos del Grupo</h4>
+            <ul>
+                <li>
+                    Antúnez, Pablo - D.N.I: 37.792.173
+                </li>
+                <li>
+                    Mónaco, Rocío - D.N.I: 42.321.110
+                </li>
+                <li>
+                    Prats, Virginia - D.N.I: 32.274.225
+                </li>
+                <li>
+                    Vázquez, Tomás - D.N.I: 43.735.806
+                </li>
+            </ul>
+        </div>
+        <!-- /Datos del grupo -->
+
+        <!-- Menu inferior -->
+        <nav>
+            <!-- Provisorio -->
+            <h4>Menu Inferior</h4>
+            <ul>
+                <li>
+                    <a href="establecimientos.html">Establecimientos</a>
+                </li>
+                <li>
+                    <a href="inscripcion.html">Inscripcion</a>
+                </li>
+                <li>
+                    <a href="calendario.html">Calendario</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /Menu inferior -->
+
+        <!-- Redes sociales -->
+        <div class="redes">
+            <!-- Provisorio -->
+            <h4>Redes Sociales</h4>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i> </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- /Redes sociales -->
+    </footer>
+</body>
+
+</html>

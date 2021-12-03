@@ -1,0 +1,132 @@
+
+.main_inscripcion{
+    font-size: 1rem;
+    color: #000;
+    margin-bottom: 5rem;
+}
+
+.main_inscripcion  h1{
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #000;
+}
+.contenedor-texto{
+    text-align: center;
+}
+p{
+    color: #888888;
+    margin-bottom: .5rem;
+    font-size: 1.2rem;
+}
+.main_inscripcion form{
+    margin-top: 2rem;
+    width: 100%;
+}
+.grupo-form{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.campo-form{
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    margin: .35rem 1rem;
+}
+.campo-form input{
+    border-radius: 35px;
+    height: 60px;
+    padding: 6px;
+    outline: none;
+    margin-bottom: 2.3rem;
+    border: 1px solid #888888;
+    padding-left: 20px;
+}
+@media screen and (max-width:768px){
+    .grupo-form{
+        flex-direction: column;
+    }
+    .campo-form{
+        width: 90%;
+    }
+}
+/* campo number */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {-moz-appearance:textfield;}
+
+.contenedor-btn{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.contenedor-btn button{
+    width: 35%;
+    padding: .5rem;
+    outline: none;
+    color: #f4fff8;
+    background-color: orange;
+    border: 1px solid orange;
+    border-radius: 35px;
+    transition: all .5s;
+    cursor: pointer;
+    height: 60px;
+    font-weight: 700;
+}
+.contenedor-btn button:hover{
+    background-color: #f4fff8;
+    color: orange;
+    border-color: orange;
+}
+section h3{
+    text-align: center;
+}
+
+/* POPUP */
+
+.popup{
+    background-color: orange;
+    width: 35%;
+    height: 20%;
+    text-align: center;
+    position: fixed;
+    display: none;
+    z-index:2;
+    border-radius: 20px;
+    top: 50%;
+    left: 33%;
+    padding: 3em;
+
+    opacity: .7;
+}
+
+.contenedor_cruz{
+    position: relative;
+    left: -30px;
+    top: -30px;
+    font-size: 1.5em;
+}
+
+#cerrar{
+    position: absolute;
+    left: 3px;
+    top: 3px;
+
+}
+/* /POPUP */
+
+
+
+/* VALIDACION */
+#mensaje_error_email{
+    text-align: center;
+    margin-left: 2em;
+    padding-left: 23rem;
+}

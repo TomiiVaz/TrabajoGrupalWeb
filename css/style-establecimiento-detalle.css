@@ -1,0 +1,105 @@
+.tittle {
+  text-align: center;
+  font-size: 2.3em;
+  margin: 2em;
+  padding-bottom: 2em;
+  border-bottom: 3px solid #0a486b;
+}
+
+.tittle h1{
+  color: #000;
+}
+
+.cont-img-map {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cont-img-map img {
+  /* padding: 2em; */
+  border-radius: 60px;
+  transition: all .5s;
+}
+
+.cont-img-map iframe {
+  /* padding: 2em; */
+  border-radius: 60px;
+}
+
+.cont-text {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 4em;
+  padding: 0.5em;
+  border-radius: 15px;
+}
+
+.cont-text p{
+  margin: 0.5em;
+  font-size: 1.1em;
+}
+
+
+.cont-text h2 {
+  text-align: left;
+  padding-left: 6em;
+  margin: 0.5em;
+  font-size: 1.4em;
+}
+
+.e-main {
+  border-bottom: 10px solid #0a486b;
+  margin-bottom: 4em;
+}
+
+/* Niveles */
+.levels {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-bottom: 4em;
+}
+
+.levels article {
+  background-color: #0a486b;
+  padding: 1em;
+  border-radius: 15px;
+  transition: all 0.4s;
+}
+
+.levels article:hover {
+  box-shadow: 8px 10px 25px 8px rgba(0, 0, 0, 0.55);
+  transform: scale(1.05);
+}
+
+.levels a {
+  color: orange;
+}
+
+.levels h3 {
+  padding: em;
+  font-size: 2em;
+}
+
+.levels h4 {
+  padding-bottom: 2em;
+  font-size: 1em;
+}
+
+.levels h5 {
+  margin: 3px;
+  font-size: 1.1em;
+}
+
+.levels a {
+  font-size: 1.5em;
+}
+
+.levels p{
+  font-size: 1em;
+  font-weight: 100;
+  color: #fff;
+  opacity: .55;
+}
